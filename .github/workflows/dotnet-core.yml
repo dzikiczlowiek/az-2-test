@@ -22,7 +22,7 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: dotnet publish
-      run: | dotnet publish -c Release -o az2test
+      run: dotnet publish -c Release -o az2test
     - name: Test
       run: dotnet test --no-restore --verbosity normal
       
